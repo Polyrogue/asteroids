@@ -243,7 +243,7 @@ function keyPressed()
 		bgmIntro.play();
 		playText = "PREPARE YOURSELF COMMANDER";
 		
-		setTimeout(function(){bgm.loop();},7000);
+		setTimeout(function(){bgm.loop();},6900);
 		
 		setTimeout(function(){bgCol = color(255);},1900);
 		
@@ -379,7 +379,7 @@ function reset()
 {
 	if(asteroids.length > 0)
 	{
-		for(var i = 0; i < asteroids.length; i++)
+		for(var i = asteroids.length-1; i > 0; i--)
 		{
 			asteroids[i].alive = false;
 			asteroids.splice(i,1);
